@@ -1,0 +1,356 @@
+aid: shopee
+name: Shopee
+description: |
+  Shopee is Southeast Asia's largest e-commerce marketplace,
+  operated by Sea Limited and active across Singapore, Indonesia,
+  Malaysia, Thailand, the Philippines, Vietnam, Taiwan, and select
+  markets in Latin America (Brazil, Mexico, Colombia, Chile) and
+  Europe (Spain, Poland). Shopee Open Platform (open.shopee.com)
+  exposes a partner / seller-facing REST API (v2) covering shop
+  configuration, product / SKU management, order processing,
+  logistics and shipping label generation, returns and refunds,
+  discounts and vouchers, payments, push notifications, and global
+  cross-border product management. Authentication uses a partner
+  ID + partner key with per-shop access tokens issued via OAuth-
+  style shop authorization.
+type: Index
+position: Provider
+access: Partner
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - E-commerce
+  - Marketplace
+  - Southeast Asia
+  - Cross-border
+  - Orders
+  - Products
+  - Logistics
+  - Shopee
+url: https://raw.githubusercontent.com/api-evangelist/shopee/refs/heads/main/apis.yml
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.20'
+apis:
+  - aid: shopee:auth
+    name: Shopee Shop Authorization API
+    description: |
+      The shop authorization flow lets a Shopee seller grant a
+      registered partner application access to their shop. The
+      partner receives a per-shop access token (and refresh
+      token) used for all subsequent v2 API calls.
+    humanURL: https://open.shopee.com/documents?module=63&type=2
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Authentication
+      - OAuth
+      - Authorization
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=63&type=2
+  - aid: shopee:shop
+    name: Shopee Shop API
+    description: |
+      Manage shop-level configuration: shop info, shop profile,
+      shop notification, shop notice, warehouse details, and
+      authorised category list.
+    humanURL: https://open.shopee.com/documents?module=92&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Shop
+      - Configuration
+      - Profile
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=92&type=1
+  - aid: shopee:product
+    name: Shopee Product API
+    description: |
+      Create, update, retrieve, and delete products and SKUs;
+      manage product attributes, variations, media, stock, and
+      price; submit and check Shopee's category attribute tree.
+    humanURL: https://open.shopee.com/documents?module=89&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Products
+      - SKUs
+      - Catalog
+      - Inventory
+      - Pricing
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=89&type=1
+  - aid: shopee:order
+    name: Shopee Order API
+    description: |
+      Retrieve order list, order detail, order status updates,
+      buyer information, and items. Supports order cancellation,
+      split, and dispute information.
+    humanURL: https://open.shopee.com/documents?module=94&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Orders
+      - Fulfillment
+      - Buyers
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=94&type=1
+  - aid: shopee:logistics
+    name: Shopee Logistics API
+    description: |
+      Manage shipping for Shopee orders: get shipping parameter,
+      ship order, get shipping document, get tracking number,
+      tracking info, update channel, channel list, and address.
+    humanURL: https://open.shopee.com/documents?module=95&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Logistics
+      - Shipping
+      - Tracking
+      - Labels
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=95&type=1
+  - aid: shopee:returns
+    name: Shopee Returns API
+    description: |
+      Retrieve return requests, return detail, dispute reasons,
+      and offer to accept / dispute returns initiated by buyers,
+      with proof-of-return upload and refund coordination.
+    humanURL: https://open.shopee.com/documents?module=102&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Returns
+      - Refunds
+      - Disputes
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=102&type=1
+  - aid: shopee:discount
+    name: Shopee Discount API
+    description: |
+      Create and manage shop-level discount campaigns: add /
+      update / delete discounts, manage discount items, and
+      retrieve discount lists and details.
+    humanURL: https://open.shopee.com/documents?module=98&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Discounts
+      - Campaigns
+      - Promotions
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=98&type=1
+  - aid: shopee:voucher
+    name: Shopee Voucher API
+    description: |
+      Create, update, list, and end vouchers; manage voucher
+      coverage (product / order level), display channels, and
+      target audience for shop and platform-tier promotions.
+    humanURL: https://open.shopee.com/documents?module=99&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Vouchers
+      - Coupons
+      - Promotions
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=99&type=1
+  - aid: shopee:bundle-deal
+    name: Shopee Bundle Deal API
+    description: |
+      Create and manage bundle deal promotions ("buy X for Y
+      price") at the shop level, including bundle deal items
+      and shop list operations.
+    humanURL: https://open.shopee.com/documents?module=100&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Bundles
+      - Deals
+      - Promotions
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=100&type=1
+  - aid: shopee:add-on-deal
+    name: Shopee Add-on Deal API
+    description: |
+      Add-on Deal API supports "buy main item, get add-on at
+      discount" promotions — including add-on deal CRUD and
+      add-on item management.
+    humanURL: https://open.shopee.com/documents?module=101&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Add-on Deals
+      - Promotions
+      - Upsell
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=101&type=1
+  - aid: shopee:payment
+    name: Shopee Payment API
+    description: |
+      Retrieve payout, escrow detail, payment method list, billing
+      transaction info, and wallet transaction list for
+      reconciliation of Shopee marketplace settlements.
+    humanURL: https://open.shopee.com/documents?module=97&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Payments
+      - Payouts
+      - Escrow
+      - Reconciliation
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=97&type=1
+  - aid: shopee:account-health
+    name: Shopee Account Health API
+    description: |
+      Surface shop performance metrics — penalty points, listing
+      violations, late shipment rate, cancellation rate, and
+      other operational health indicators.
+    humanURL: https://open.shopee.com/documents?module=106&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Account Health
+      - Performance
+      - Metrics
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=106&type=1
+  - aid: shopee:public
+    name: Shopee Public API
+    description: |
+      Public endpoints that do not require shop authorization —
+      get shops by partner, refresh access token, get shop and
+      merchants info, and warehouse / region utilities.
+    humanURL: https://open.shopee.com/documents?module=87&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Public
+      - Utilities
+      - Partner
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=87&type=1
+  - aid: shopee:push
+    name: Shopee Push (Webhook) API
+    description: |
+      Subscribe to push notifications for order, item, return,
+      logistics, payment, and shop events; manage push
+      configurations and verify Shopee's HMAC signatures on
+      every delivery.
+    humanURL: https://open.shopee.com/documents?module=88&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Webhooks
+      - Events
+      - Push
+      - Notifications
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=88&type=1
+  - aid: shopee:global-product
+    name: Shopee Global Product (CBSC) API
+    description: |
+      Cross-Border Seller Center (CBSC) APIs let global sellers
+      manage a single master product catalog and publish to one
+      or many Shopee country shops, with per-region price and
+      stock control.
+    humanURL: https://open.shopee.com/documents?module=104&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Global Product
+      - Cross-border
+      - CBSC
+      - Catalog
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=104&type=1
+  - aid: shopee:merchant
+    name: Shopee Merchant API
+    description: |
+      Merchant-level operations for Shopee Mall and CB Merchant
+      accounts that own multiple shops — including merchant info,
+      shop list, and merchant warehouse management.
+    humanURL: https://open.shopee.com/documents?module=105&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - Merchant
+      - Mall
+      - Multi-Shop
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=105&type=1
+  - aid: shopee:first-mile
+    name: Shopee First-Mile API
+    description: |
+      First-Mile APIs (for cross-border sellers) manage the
+      consolidated outbound shipment from a seller's home market
+      into Shopee's destination-country logistics network,
+      including manifest generation and tracking.
+    humanURL: https://open.shopee.com/documents?module=103&type=1
+    baseURL: https://partner.shopeemobile.com
+    tags:
+      - First-Mile
+      - Cross-border
+      - Manifests
+      - Logistics
+    properties:
+      - type: Documentation
+        url: https://open.shopee.com/documents?module=103&type=1
+features:
+  - name: Multi-Country Marketplace API
+    description: A single v2 API surface supports sellers across 10+ Shopee country shops in SEA, LATAM, and Europe.
+  - name: Cross-Border Selling
+    description: Global Product (CBSC) and First-Mile APIs let cross-border sellers manage one master catalog and one consolidated shipment.
+  - name: Push Webhooks with HMAC
+    description: Real-time order, return, logistics, payment, and item events delivered to partner endpoints with HMAC-SHA256 signatures.
+  - name: End-to-End Operations
+    description: Coverage spans shop, products, orders, logistics, returns, payments, vouchers, bundle and add-on deals, and account health in one platform.
+useCases:
+  - name: ERP / OMS Integration
+    description: ERP and OMS vendors connect sellers' inventory, orders, and fulfillment to Shopee marketplaces.
+  - name: Cross-Border Catalog Sync
+    description: Brand owners publish a master catalog into multiple Shopee country shops with localized price and stock.
+  - name: Marketing Automation
+    description: Automate vouchers, discount campaigns, and bundle / add-on deals through API-driven promotion engines.
+  - name: Reconciliation
+    description: Pull payout, escrow, and wallet data into accounting systems for Shopee settlement reconciliation.
+integrations:
+  - name: Shopify
+  - name: WooCommerce
+  - name: Magento
+  - name: BigCommerce
+  - name: Deliverr
+  - name: ShopeePay
+  - name: SLS (Shopee Logistics Service)
+  - name: J&T Express
+  - name: Ninja Van
+authentication:
+  - type: PartnerKeyHMAC
+    description: Each API call is signed with an HMAC-SHA256 signature derived from the partner_key, partner_id, request path, and timestamp.
+  - type: ShopAccessToken
+    description: Shop-scoped access tokens are issued via the shop authorization flow and refreshed before expiry.
+  - type: WebhookSignature
+    description: Push (webhook) deliveries include an Authorization header that partners verify against their partner_key.
+common:
+  - type: Marketplace
+    url: https://shopee.com/
+  - type: DeveloperPortal
+    url: https://open.shopee.com/
+  - type: Documentation
+    url: https://open.shopee.com/documents
+  - type: DeveloperGuide
+    url: https://open.shopee.com/developer-guide
+  - type: ShopeeMall
+    url: https://shopee.sg/mall
+  - type: SellerCenter
+    url: https://seller.shopee.com/
+  - type: ShopeePay
+    url: https://shopeepay.com/
+  - type: ParentCompany
+    url: https://www.sea.com/
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/shopee/
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
