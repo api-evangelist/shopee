@@ -351,7 +351,7 @@ common:
     url: https://www.sea.com/
   - type: LinkedIn
     url: https://www.linkedin.com/company/shopee/
-  - type: LLMsTxt
+  - type: LlmsText
     url: https://shopee.sg/llms.txt
 maintainers:
   - FN: Kin Lane
