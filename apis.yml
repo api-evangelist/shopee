@@ -333,6 +333,8 @@ authentication:
   - type: WebhookSignature
     description: Push (webhook) deliveries include an Authorization header that partners verify against their partner_key.
 common:
+  - type: DomainSecurity
+    url: security/shopee-domain-security.yml
   - type: Marketplace
     url: https://shopee.com/
   - type: DeveloperPortal
