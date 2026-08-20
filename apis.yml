@@ -30,6 +30,15 @@ position: Provider
 access: Partner
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/shopee.png
 tags:
+  - E-Commerce
+  - Marketplace
+  - Southeast Asia
+  - Cross-Border
+  - Order
+  - Product
+  - Logistics
+  - Shopee
+tags_raw:
   - E-commerce
   - Marketplace
   - Southeast Asia
@@ -53,6 +62,9 @@ apis:
     humanURL: https://open.shopee.com/documents?module=63&type=2
     baseURL: https://partner.shopeemobile.com
     tags:
+      - Authentication
+      - Authorization
+    tags_raw:
       - Authentication
       - OAuth
       - Authorization
@@ -83,6 +95,12 @@ apis:
     humanURL: https://open.shopee.com/documents?module=89&type=1
     baseURL: https://partner.shopeemobile.com
     tags:
+      - Product
+      - SKUs
+      - Catalog
+      - Inventory
+      - Pricing
+    tags_raw:
       - Products
       - SKUs
       - Catalog
@@ -100,6 +118,10 @@ apis:
     humanURL: https://open.shopee.com/documents?module=94&type=1
     baseURL: https://partner.shopeemobile.com
     tags:
+      - Order
+      - Fulfillment
+      - Buyers
+    tags_raw:
       - Orders
       - Fulfillment
       - Buyers
@@ -253,6 +275,11 @@ apis:
     humanURL: https://open.shopee.com/documents?module=88&type=1
     baseURL: https://partner.shopeemobile.com
     tags:
+      - Webhook
+      - Event
+      - Push
+      - Notification
+    tags_raw:
       - Webhooks
       - Events
       - Push
@@ -270,6 +297,11 @@ apis:
     humanURL: https://open.shopee.com/documents?module=104&type=1
     baseURL: https://partner.shopeemobile.com
     tags:
+      - Global Product
+      - Cross-Border
+      - CBSC
+      - Catalog
+    tags_raw:
       - Global Product
       - Cross-border
       - CBSC
@@ -302,6 +334,11 @@ apis:
     humanURL: https://open.shopee.com/documents?module=103&type=1
     baseURL: https://partner.shopeemobile.com
     tags:
+      - First-Mile
+      - Cross-Border
+      - Manifests
+      - Logistics
+    tags_raw:
       - First-Mile
       - Cross-border
       - Manifests
