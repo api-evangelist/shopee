@@ -44,7 +44,7 @@ tags:
   - E-Commerce
   - Marketplace
   - Southeast Asia
-  - Cross-border
+  - Cross-Border
   - Order
   - Product
   - Logistics
@@ -309,7 +309,7 @@ apis:
     baseURL: https://partner.shopeemobile.com
     tags:
       - Global Product
-      - Cross-border
+      - Cross-Border
       - CBSC
       - Catalog
     tags_raw:
@@ -346,7 +346,7 @@ apis:
     baseURL: https://partner.shopeemobile.com
     tags:
       - First-Mile
-      - Cross-border
+      - Cross-Border
       - Manifests
       - Logistics
     tags_raw:
