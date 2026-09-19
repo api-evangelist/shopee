@@ -112,6 +112,10 @@ apis:
   tags:
   - Shop
   - Configuration
+  - Profiles
+  tags_raw:
+  - Shop
+  - Configuration
   - Profile
   properties:
   - type: Documentation
@@ -324,6 +328,10 @@ apis:
   tags:
   - Public
   - Utilities
+  - Partners
+  tags_raw:
+  - Public
+  - Utilities
   - Partner
   properties:
   - type: Documentation
@@ -392,6 +400,10 @@ apis:
   humanURL: https://open.shopee.com/documents?module=105&type=1
   baseURL: https://partner.shopeemobile.com
   tags:
+  - Merchants
+  - Mall
+  - Multi-Shop
+  tags_raw:
   - Merchant
   - Mall
   - Multi-Shop
