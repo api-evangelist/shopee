@@ -72,7 +72,7 @@ tags_raw:
 - Shopee
 url: https://raw.githubusercontent.com/api-evangelist/shopee/refs/heads/main/apis.yml
 created: '2026-05-23'
-modified: '2026-09-16'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
 - aid: shopee:auth
@@ -481,6 +481,8 @@ authentication:
   description: Push (webhook) deliveries include an Authorization header that partners verify against
     their partner_key.
 common:
+- url: https://shopee.com/blog/
+  type: Blog
 - type: Website
   url: https://shopee.com
 - type: DomainSecurity
