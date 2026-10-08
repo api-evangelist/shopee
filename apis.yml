@@ -481,6 +481,12 @@ authentication:
   description: Push (webhook) deliveries include an Authorization header that partners verify against
     their partner_key.
 common:
+- type: Plans
+  url: plans/shopee-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/shopee-rate-limits.yml
+- type: FinOps
+  url: finops/shopee-finops.yml
 - url: https://shopee.com/blog/
   type: Blog
 - type: Website
